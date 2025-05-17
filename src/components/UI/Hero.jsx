@@ -1,13 +1,10 @@
-import React from "react";
+import React from "react";  
 import heroImg from "../../assets/images/Untitled design.png";
-import CountUp from "react-countup";
 import { motion } from "framer-motion";
-import { AiOutlineInstagram } from "react-icons/ai";
-import { AiOutlineLinkedin } from "react-icons/ai";
 
 const Hero = () => {
   return (
-    <section className="pt-0" id="about">
+    <section className="pt-0" id="hero">
       <div className="container pt-14">
         <div className="md:flex items-center justify-between sm:flex-col md:flex-row">
           <div className="w-full md:basis-1/2 p-2">
@@ -16,13 +13,18 @@ const Hero = () => {
               animate={{ x: "0px", visibility: "visible" }}
               transition={{ duration: 1 }}
             >
-              <h5
+              <h3
                 data-aos="fade-right"
                 data-aos-duration="1500"
-                className="text-headingColor font-[600] text-[16px]"
+                className="text-gradient font-extrabold text-[56px] tracking-wide drop-shadow-lg"
+                style={{ 
+                  background: "linear-gradient(90deg, #06b6d4, #3b82f6)", 
+                  WebkitBackgroundClip: "text", 
+                  WebkitTextFillColor: "transparent" 
+                }}
               >
                 Hello Welcome
-              </h5>
+              </h3>
             </motion.div>
 
             <motion.div
@@ -33,12 +35,13 @@ const Hero = () => {
               <h1
                 data-oas="fade-up"
                 data-aos-duration="1500"
-                className="text-headingColor font-[800] text-[1.8rem] sm:text-[30px] leading-[35px]
-                sm:leading-[46px] mt-5"
+                className="text-headingColor font-extrabold text-[2.2rem] sm:text-[3rem] leading-tight sm:leading-[60px] mt-5 tracking-tight drop-shadow-md"
               >
                 I'm Irgi Ahmad Fahreza
                 <br />
-                Network Engineer
+                <span className="text-cyan-500 font-semibold text-[1.5rem] sm:text-[1.8rem] tracking-widest uppercase drop-shadow-sm">
+                  IT Support Staff
+                </span>
               </h1>
             </motion.div>
 
@@ -47,51 +50,22 @@ const Hero = () => {
               animate={{ x: "0px", visibility: "visible" }}
               transition={{ duration: 1 }}
             >
-              <h3
+              <h2
                 data-oas="fade-up"
                 data-aos-duration="1500"
-                className="text-headingColor font-[600] text-[12px] leading-[18px] text-justify mt-5"
+                className="text-headingColor font-medium text-[14px] leading-6 text-justify mt-5 max-w-xl"
+                style={{ color: "#374151" }}
               >
-                I am a graduate of Informatics Engineering from Universitas
-                Muhammadiyah Prof. Dr. Hamka. An IT specialist with a strong
-                background in network management and practical experience in
-                network administration. I possess expertise in network device
-                configuration, cybersecurity, and network monitoring using tools
-                such as MikroTik and Grafana. Solution-oriented with sharp
-                analytical skills and effective communication abilities in both
-                Indonesian and English. Committed to supporting team performance
-                through reliable technical support and quick problem-solving.
-                <br />
-              </h3>
+                IT Support Staff, I am a dedicated and proactive IT Support professional with experience in troubleshooting hardware and software issues, 
+                installation, network configuration, and providing direct technical support to users. 
+                With strong communication skills and a quick problem-solving approach, 
+                I ensure smooth IT system operations to maximize team productivity. 
+                Skilled in managing devices, networks, and software, I am always eager to learn new technologies and deliver the best service to support the company’s business goals.
+              </h2>
             </motion.div>
-
-            <div
-              data-oas="fade-up"
-              data-aos-duration="1800"
-              data-aos-delay="200"
-              className="flex items-center gap-6 mt-7"
-            >
-              <a href="*#contact">
-                <button
-                  className="bg-[#4299e1] text-white font-[500] flex items-center gap-2
-                        hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]"
-                >
-                  <i class="ri-mail-line"></i> Hire me
-                </button>
-              </a>
-              <a
-                href="#portfolio"
-                className="text-smallTextColor font-[600] text-["
-              >
-                See Portfolio
-              </a>
-
-              <AiOutlineInstagram />
-              <AiOutlineLinkedin />
-            </div>
           </div>
           <div className="w-full md:basis-1/2 p-2">
-            <img class="object-center md:object-top" src={heroImg} />
+            <img className="object-center md:object-top" src={heroImg} alt="Hero" />
           </div>
         </div>
       </div>

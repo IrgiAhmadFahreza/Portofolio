@@ -29,13 +29,13 @@ const Header = () => {
           <div className="menu">
             <ul className="flex items-center">
               <li className="mr-6">
-                <a href="#home">Home</a>
+                <a href="#hero">Home</a>
               </li>
               <li className="mr-6">
-                <a href="#portofolio">Portofolio</a>
+                <a href="#portfolio">Project</a>
               </li>
               <li className="mr-6">
-                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
               </li>
               <li className="mr-6">
                 <a href="#contact">Contact</a>
